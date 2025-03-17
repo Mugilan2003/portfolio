@@ -1,0 +1,239 @@
+html {
+    scrollbar-width: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.header{
+    background: linear-gradient(wheat,rgb(191, 233, 114));
+}
+.navigation{
+    background-color: white;
+    margin: 20px 30px;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.3);
+}
+.navigat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 15px;
+    padding: 5px 10px;
+}
+.navigat ul{
+    display: flex;
+    align-items: center;
+    align-items: center;
+}
+.navigat ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navigat ul li:last-child {
+    margin-left: 30px; /* Adds spacing before the button */
+}
+
+.navigat li a{
+    text-decoration: none;
+    color: black;
+    
+}
+.navigat li a:hover{
+    color: orangered;
+    text-decoration: underline red;
+}
+.navigat li a button{
+    padding: 8px 12px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: orange;
+}
+.navigat ul button:hover{
+    background-color: bisque;
+}
+.navigat ul button:active{
+    background-color: rgb(101, 101, 214);
+}
+
+@media (max-width: 767px){
+   .navigat nav{
+    display: none;
+   }
+   .header{
+    width: 100vw;
+   }
+}
+.hero{
+    display: flex;
+    margin:20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    height: 83vh;
+    justify-content: space-between;
+    box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.3);
+}
+.herotxt{
+    margin-top: 15%;
+    margin-left: 6%;
+}
+.hero .nametxt{
+    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+}
+.hero .nametxt .name{
+    margin-bottom: 20px;
+}
+.nametxt :last-child{
+    margin-top: 10px;
+}
+.nametxt ul li{
+padding: 10px 10px 10px 0px;
+}
+.nametxt li a{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 3px 2px 5px 1px rgba(0, 0, 0, 0.555);
+    
+}
+.nametxt li a:active{
+    background-color: crimson;
+    color: white;
+    font-size: large;
+}
+.hero-backdrop{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 24%;
+    right: 45px;
+    scrollbar-width: none;
+}
+.myimage{
+    position: absolute;
+    height: 530px;
+    width: 400px;
+    right: 10%;
+    bottom: 16px;
+}
+@media (max-width: 767px){
+    .hero{
+     display: block;
+     justify-content: space-between;
+    }
+    .hero-backdrop{
+        height:400px;
+        width: 400px;
+        left: 10%;
+        top: 40%;
+    }
+    .myimage{
+        height: 550px;
+        width: 400px;
+        left: 10%;
+        bottom: 6%;
+    }
+ }
+ @media (width: 360px){
+    .hero{
+        display: block;
+        justify-content: space-between;
+       }
+       .hero-backdrop{
+           height:300px;
+           width: 300px;
+           left: 10%;
+           top: 50%;
+       }
+       .myimage{
+           height: 400px;
+           width: 300px;
+           left: 10%;
+           bottom: 4%;
+       }
+ }
+ .about-me{
+    background: linear-gradient(to right,rgb(1, 174, 255),rgb(135, 135, 207));
+    height: auto;
+    height:95%;
+ }
+ .about{
+    margin: 25px;
+ }
+ .about h1{
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.815);
+ }
+ .about-txt{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+ }
+ .about-txt p{
+    max-width: 60%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+ }
+ .education{
+    background-image: url(img/educationbg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+ }
+ .education h1{
+    margin-top: 20px;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.603);
+ }
+ .edu-div{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+ .edu{
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 7px;
+    margin: 10px 0px;
+    width: 80vw;
+    box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.3);
+ }
+ .clg hr{
+    margin: 10px 2px;
+    width: 80.15%;
+    height: 8px;
+    background-color: blue;
+    border-radius: 5px;
+    border: none;
+ }
+ .hsc hr{
+    margin: 10px 2px;
+    width: 62.8%;
+    height: 8px;
+    background-color: blue;
+    border-radius: 5px;
+    border: none;
+ }
+ .sslc hr{
+     margin: 10px 2px;
+     width: 78.4%;
+     height: 8px;
+     background-color: blue;
+     border-radius: 5px;
+     border: none;
+ }
