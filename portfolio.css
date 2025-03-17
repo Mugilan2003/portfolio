@@ -134,16 +134,21 @@ padding: 10px 10px 10px 0px;
      justify-content: space-between;
     }
     .hero-backdrop{
-        height:400px;
-        width: 400px;
-        left: 10%;
+        /* height:400px; */  
+        /* width: 400px; */
+        height:380px;
+        width: 380px;
+        /* left: 10%; */
+        right: 4%;
         top: 40%;
     }
     .myimage{
-        height: 550px;
-        width: 400px;
+        /* height: 550px; */
+        /* width: 400px; */
+        height: 500px;
+        width: 350px;
         left: 10%;
-        bottom: 6%;
+        bottom: 44px;
     }
  }
  @media (width: 360px){
@@ -166,8 +171,8 @@ padding: 10px 10px 10px 0px;
  }
  .about-me{
     background: linear-gradient(to right,rgb(1, 174, 255),rgb(135, 135, 207));
-    height: auto;
-    height:95%;
+    
+    height:90%;
  }
  .about{
     margin: 25px;
@@ -179,7 +184,7 @@ padding: 10px 10px 10px 0px;
  .about-txt{
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
     display: flex;
  }
  .about-txt p{
@@ -192,7 +197,10 @@ padding: 10px 10px 10px 0px;
     background-image: url(img/educationbg.jpg);
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 50px;
+    filter: blur(0px);
  }
  .education h1{
     margin-top: 20px;
@@ -200,16 +208,16 @@ padding: 10px 10px 10px 0px;
  }
  .edu-div{
     display: flex;
-    margin-top: 50px;
+    margin-top: 100px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
  }
  .edu{
     background-color: white;
-    padding: 5px 10px;
+    padding: 10px 10px 10px 5px;
     border-radius: 7px;
-    margin: 10px 0px;
+    margin: 15px 0px 0px 10px;
     width: 80vw;
     box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.3);
  }
@@ -237,3 +245,60 @@ padding: 10px 10px 10px 0px;
      border-radius: 5px;
      border: none;
  }
+ .skills{
+    height: 100vh;
+ }
+ .skills h1{
+    margin-top: 20px;
+    text-align: center;
+ }
+ .skills:last-child{
+    align-items: center;
+    height: 100vh;
+ }
+ .skills-div{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+    
+ }
+ .frontend,.backend,.tools{
+    display: flex;
+    flex-direction: column;
+    background:linear-gradient(rgb(155, 135, 172),rgb(139, 107, 107));
+    padding:20px;
+    width: 300px;
+
+    h1{
+        margin-top: 20px;
+    }
+    border-radius: 10px;
+ }
+
+.lang{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    position: relative;
+}
+@media(max-width:767px){
+  .skills{
+    display:block;
+  }  
+  .skills-div{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-left: 18%;
+    
+  }
+}
+.lang img{
+    top:10px;
+    right: 10px;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+}
