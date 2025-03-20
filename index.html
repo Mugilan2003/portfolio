@@ -15,11 +15,11 @@
                 <h1>MUGILAN</h1>
                 <nav>
                     <ul>
-                        <li><a href="">About Me</a></li>
-                        <li><a href="">Education</a></li>
-                        <li><a href="">Skills</a></li>
-                        <li><a href="">Project</a></li>
-                        <li><a href=""><button>Hire Me</button></a></li>
+                        <li><a href="#aboutme">About Me</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#hireme"><button>Hire Me</button></a></li>
                     </ul>
                 </nav>
             </div>
@@ -45,7 +45,7 @@
 
     </div>
 
-    <div class="about-me">
+    <div class="about-me" ID="aboutme">
         <div class="about">
             <h1 align="center">Learn About Me</h1>
             <div class="about-txt">
@@ -58,7 +58,7 @@
             </div>
         </div>
     </div>
-    <div class="education">
+    <div class="education" id="education">
         <h1 align="center">Education</h1>
         <div class="edu-div">
             <div class="clg edu">
@@ -82,19 +82,19 @@
 
         </div>
     </div>
-    <div class="skills">
+    <div class="skills" id="skills">
         <h1 align="center">Skills</h1>
         <div class="skills-div">
             <div class="frontend">
                 <h1>Frontend</h1>
                 <div class="html lang">
                     <h2>HTML</h2>
-                    <h3>beginner</h3>
+                    <h3>Beginner</h3>
                     <img src="img/html-5.png" alt="">
                 </div>
                 <div class="css lang">
                     <h2>CSS</h2>
-                    <h3>beginner</h3>
+                    <h3>Beginner</h3>
                     <img src="img/css.png" alt="">
                 </div>
             </div>
@@ -107,25 +107,102 @@
                 </div>
                 <div class="sql lang">
                     <h2>SQL</h2>
-                    <h3>Intermediate</h3>
+                    <h3>Beginner</h3>
                     <img src="img/sql.png" alt="">
                 </div>
             </div>
             <div class="tools">
                 <h1>Tools</h1>
                 <div class="eclipse tool">
-                    <img src="#eclipse" alt="">
+                    <img src="img/eclipse.png" alt="eclipseIde">
+                    <h3>Eclipse IDE</h3>
                 </div>
                 <div class="vscode tool">
-                    <img src="#vscode" alt="">
+                    <img src="img/visualstudio.png" alt="Vscode">
+                    <h3>Visual Studio Code</h3>
                 </div>
                 <div class="Mysql tool">
-                    <img src="#Mysql" alt="">
+                    <img src="img/mysql.png" alt="Mysql">
+                    <h3>MySql Workbench</h3>
+                </div>
+                <div class="github tool">
+                    <img src="img/github.png" alt="github">
+                    <h3>GitHub</h3>
                 </div>
             </div>
         </div>
     </div>
-    </div>
 </body>
-
+<div class="project" id="project">
+    <h1>Projects</h1>
+    <div class="proj-desc">
+        <p>
+            This section showcases my hands-on experience with various projects, highlighting my skills in Java, MySQL, and web development. Each project includes a brief description, key features, and technologies used.
+        </p>
+    </div>
+    <div class="proj1">
+        <h2 class="p1-head" >GUI-Based CRUD Application</h2>
+        <p class="p1-desc">A GUI-Based CRUD (Create, Read, Update, Delete) application built using Java and MySQL. This application allows users to manage data efficiently through a user-friendly graphical interface. It demonstrates essential database operations and is designed for beginner-friendly database interaction.</p>
+        <ul class="p1-ul1">
+            <h3>Key Features:</h3>
+            <li>Create: Add new records to the database.</li>
+            <li> Read: Display stored data in a structured format.</li>
+            <li> Update: Modify existing records.</li>
+            <li>Delete: Remove records permanently.</li>
+            <li>User-Friendly UI: Built with Swing for an interactive experience.</li>
+            <li>MySQL Integration: Efficient data storage and retrieval using JDBC.</li>
+        </ul >
+        <ul class="p1-ul2">
+            <h3>Tech Stack:</h3>
+            <li>Frontend: Java Swing</li>
+            <li>Backend: Java (JDBC)</li>
+            <li>Database: MySQL</li>
+        </ul>
+        <p class="p1-end">This project serves as a foundation for learning database-driven applications and understanding CRUD operations in Java.</p>
+    
+    <button class="p1-button">Link</button>
+    </div>
+    
+    <div class="proj1">
+        <h2 class="p1-head" >GUI-Based CRUD Application</h2>
+        <p class="p1-desc">A GUI-Based CRUD (Create, Read, Update, Delete) application built using Java and MySQL. This application allows users to manage data efficiently through a user-friendly graphical interface. It demonstrates essential database operations and is designed for beginner-friendly database interaction.</p>
+        <ul class="p1-ul1">
+            <h3>Key Features:</h3>
+            <li>Create: Add new records to the database.</li>
+            <li> Read: Display stored data in a structured format.</li>
+            <li> Update: Modify existing records.</li>
+            <li>Delete: Remove records permanently.</li>
+            <li>User-Friendly UI: Built with Swing for an interactive experience.</li>
+            <li>MySQL Integration: Efficient data storage and retrieval using JDBC.</li>
+        </ul >
+        <ul class="p1-ul2">
+            <h3>Tech Stack:</h3>
+            <li>Frontend: Java Swing</li>
+            <li>Backend: Java (JDBC)</li>
+            <li>Database: MySQL</li>
+        </ul>
+        <p class="p1-end">This project serves as a foundation for learning database-driven applications and understanding CRUD operations in Java.</p>
+    
+    <button class="p1-button">Link</button>
+    </div>
+</div>
+<div class="hireme" id="hireme">
+    <div class="register">
+        <h2 align="center">Contact</h2>
+        <form action="" class="contactform">
+            <label for="">Your Name</label>
+            <input type="text" required>
+            <label for="">Your Email</label>
+            <input type="email" required>
+            <label for="">Comment</label>
+            <textarea name="comments" id="" cols="20" rows="5"></textarea>
+            <input type="button" value="submit" class="btn">
+        </form>
+    </div>
+</div>
+<div class="footer">
+    <div>
+        
+    </div>
+</div>
 </html>
