@@ -134,19 +134,15 @@ padding: 10px 10px 10px 0px;
      justify-content: space-between;
     }
     .hero-backdrop{
-        /* height:400px; */  
-        /* width: 400px; */
-        height:380px;
-        width: 380px;
-        /* left: 10%; */
+       
+        height:350px;
+        width: 350px;
         right: 4%;
-        top: 40%;
+        top: 50%;
     }
     .myimage{
-        /* height: 550px; */
-        /* width: 400px; */
-        height: 500px;
-        width: 350px;
+        height: 00px;
+        width: 250px;
         left: 10%;
         bottom: 44px;
     }
