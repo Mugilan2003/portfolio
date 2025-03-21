@@ -7,6 +7,9 @@ html {
     box-sizing: border-box;
     overflow-x: hidden;
 }
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .header{
     background: linear-gradient(wheat,rgb(191, 233, 114));
 }
@@ -80,11 +83,11 @@ html {
     justify-content: space-between;
     box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.3);
 }
-.herotxt{
+
+.hero .nametxt{
+    width: 35%;
     margin-top: 15%;
     margin-left: 6%;
-}
-.hero .nametxt{
     align-items: baseline;
     display: flex;
     flex-direction: column;
@@ -133,23 +136,30 @@ padding: 10px 10px 10px 0px;
      display: block;
      justify-content: space-between;
     }
+    .hero .nametxt{
+        width: 60%;
+    }
     .hero-backdrop{
-       
+        /* height:400px; */  
+        /* width: 400px; */
         height:350px;
         width: 350px;
+        /* left: 10%; */
         right: 4%;
         top: 50%;
     }
     .myimage{
+        /* height: 550px; */
+        /* width: 400px; */
         height: 400px;
-        width: 250px;
+        width: 300px;
         left: 10%;
         bottom: 44px;
     }
  }
  .about-me{
     background: linear-gradient(to right,white,rgb(1, 174, 255),rgb(135, 135, 207),rgba(216, 132, 23, 0.747));
-    height:90%;
+    height:90%;/* base 90% */
  }
  .about{
     margin: 25px;
@@ -198,6 +208,12 @@ padding: 10px 10px 10px 0px;
     width: 60vw;
     box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.3);
  }
+ /* @media (max-width: 767px){
+    .edu{
+        width: 70vw;
+        padding: 5px;
+    }
+ } */
  .clg hr{
     margin: 10px 2px;
     width: 80.15%;
@@ -328,6 +344,9 @@ padding: 10px 10px 10px 0px;
     flex-direction: column;
     align-items: center;
 }
+.project h1{
+    margin-top: 20px;
+}
 .proj-desc{
     margin-top: 5%;
     display: flex;
@@ -393,7 +412,8 @@ padding: 10px 10px 10px 0px;
     justify-content: center;
     align-items: center;
     height: 95vh;
-    background:linear-gradient(rgba(255, 0, 0, 0.473),rgba(255, 99, 71, 0.377),rgba(255, 166, 0, 0.521),pink,rgba(255, 255, 255, 0.39),rgba(128, 0, 128, 0.452));
+    backdrop-filter: blur(1px);
+    background:linear-gradient(rgba(255, 0, 0, 0.473),rgba(255, 99, 71, 0.377),rgba(255, 166, 0, 0.521),pink,rgba(184, 179, 179, 0),rgba(167, 13, 167, 0.774));
 }
 .register{
     display: flex;
@@ -454,3 +474,43 @@ padding: 10px 10px 10px 0px;
     background-size: cover;
     background-repeat: no-repeat;
 }
+.footer-txt{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 5px;
+}
+.foottxt h3,p{
+    margin: 5px;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyright p{
+    margin-top: 5%;
+}
+.footer .icons img:hover{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+@media(max-width:768px){
+    .footer{
+        height:150px;
+    }
+    .footer-txt{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .foottxt h3,p{
+        margin: 5px;
+    }
+    .footer-txt h3{
+        font-size: 15px;   
+     }
+     .icons{
+        margin-left: 20px;
+     }
+    }
