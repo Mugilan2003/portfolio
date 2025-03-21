@@ -79,18 +79,19 @@ body{
     background-color: white;
     padding: 10px;
     border-radius: 8px;
-    height: 83vh;
+    height: 83vh;/*base 83vh*/
     justify-content: space-between;
     box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.3);
 }
-
-.hero .nametxt{
-    width: 35%;
+.herotxt{
     margin-top: 15%;
     margin-left: 6%;
+}
+.hero .nametxt{
     align-items: baseline;
     display: flex;
     flex-direction: column;
+    width: 500px;
 }
 .hero .nametxt .name{
     margin-bottom: 20px;
@@ -136,9 +137,6 @@ padding: 10px 10px 10px 0px;
      display: block;
      justify-content: space-between;
     }
-    .hero .nametxt{
-        width: 60%;
-    }
     .hero-backdrop{
         /* height:400px; */  
         /* width: 400px; */
@@ -151,10 +149,13 @@ padding: 10px 10px 10px 0px;
     .myimage{
         /* height: 550px; */
         /* width: 400px; */
-        height: 400px;
-        width: 300px;
+        height: 500px;
+        width: 350px;
         left: 10%;
         bottom: 44px;
+    }
+    .nametext{
+        width: auto;
     }
  }
  .about-me{
@@ -208,12 +209,12 @@ padding: 10px 10px 10px 0px;
     width: 60vw;
     box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.3);
  }
- /* @media (max-width: 767px){
+ @media (max-width: 767px){
     .edu{
         width: 70vw;
         padding: 5px;
     }
- } */
+ }
  .clg hr{
     margin: 10px 2px;
     width: 80.15%;
@@ -497,7 +498,7 @@ padding: 10px 10px 10px 0px;
 }
 @media(max-width:768px){
     .footer{
-        height:150px;
+        height:200px;
     }
     .footer-txt{
         display: flex;
@@ -507,10 +508,17 @@ padding: 10px 10px 10px 0px;
     .foottxt h3,p{
         margin: 5px;
     }
+    .footer .icons img{
+        height: 35px;
+        width: 35px;
+    }
     .footer-txt h3{
         font-size: 15px;   
      }
      .icons{
         margin-left: 20px;
      }
+     .copyright p{
+        margin-top: 15%;
+    }
     }
