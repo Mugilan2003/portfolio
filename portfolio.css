@@ -138,21 +138,16 @@ padding: 10px 10px 10px 0px;
      justify-content: space-between;
     }
     .hero-backdrop{
-        /* height:400px; */  
-        /* width: 400px; */
         height:350px;
         width: 350px;
-        /* left: 10%; */
         right: 4%;
         top: 50%;
     }
     .myimage{
-        /* height: 550px; */
-        /* width: 400px; */
-        height: 500px;
-        width: 350px;
+        height: 480px;
+        width: 320px;
         left: 10%;
-        bottom: 44px;
+        bottom: 35px;
     }
     .nametext{
         width: auto;
