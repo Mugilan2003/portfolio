@@ -5,7 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="port.css">
+    <script src="portfolio.js" ></script>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -29,9 +37,17 @@
                 <div class="txt">
                     <div class="nametxt">
                         <div class="name">
-                            <h1><span>Hi,</span> I am <span>MUGILAN</span></h1>
+                            <h1><span>Hi,</span> I am <span class="myname">MUGILAN</span></h1>
                         </div>
-                        <p>Looking for a <span>Java developer</span></p>
+                        <div class="text-change">
+                            <p class="role-txt">Looking for</p>
+                            <div class="ani-role">
+                                <span class="role">Java Developer</span>
+                                <span class="role">Web Developer</span>
+                                <span class="role">Software Developer</span>
+                                <span class="role">Developer Intern</span>
+                            </div>
+                        </div>
                         <ul>
                             <li><a href="" class="resume">Download CV</a></li>
                         </ul>
@@ -49,12 +65,13 @@
         <div class="about">
             <h1 align="center">Learn About Me</h1>
             <div class="about-txt">
-                <img src="" alt="">
-                <p>Aspiring software developer with a strong passion for technology and coding. Currently learning Core
-                    Java and Advanced java to build a foundation in software development. Eager to apply newly acquired
-                    knowledge to solve real - world problems and contribute to dynamic software teams. Committed to
-                    continuous learning, improving coding skills, and understanding best practices in software
-                    development.</p>
+                <img src="img/aboutimg.jpg" alt="">
+                <p>Hi, I'm Mugilan, an aspiring Java Developer with a strong passion for software development. I recently completed my Bachelor of Engineering in Electronics and Communication from Mahendra Institute of Technology, with a CGPA of 8.15.
+                <br> <br>
+                I am currently honing my skills in Core Java, Advanced Java and MySQL with a keen interest in building dynamic and efficient applications. My journey in coding has been driven by curiosity and a commitment to continuous learning.
+                
+                I am highly detail-oriented, a problem solver, and a quick learner, always eager to explore new technologies. My goal is to contribute to innovative software solutions and grow as a developer in a dynamic team environment.
+                </p>
             </div>
         </div>
     </div>
@@ -83,7 +100,7 @@
         </div>
     </div>
     <div class="skills" id="skills">
-        <h1 align="center">Skills</h1>
+        <h1 align="center" class="skil-h1">Skills</h1>
         <div class="skills-div">
             <div class="frontend">
                 <h1>Frontend</h1>
@@ -137,12 +154,15 @@
     <h1>Projects</h1>
     <div class="proj-desc">
         <p>
-            This section showcases my hands-on experience with various projects, highlighting my skills in Java, MySQL, and web development. Each project includes a brief description, key features, and technologies used.
+            This section showcases my hands-on experience with various projects, highlighting my skills in Java, MySQL,
+            and web development. Each project includes a brief description, key features, and technologies used.
         </p>
     </div>
     <div class="proj1">
-        <h2 class="p1-head" >GUI-Based CRUD Application</h2>
-        <p class="p1-desc">A GUI-Based CRUD (Create, Read, Update, Delete) application built using Java and MySQL. This application allows users to manage data efficiently through a user-friendly graphical interface. It demonstrates essential database operations and is designed for beginner-friendly database interaction.</p>
+        <h2 class="p1-head">GUI-Based CRUD Application</h2>
+        <p class="p1-desc">A GUI-Based CRUD (Create, Read, Update, Delete) application built using Java and MySQL. This
+            application allows users to manage data efficiently through a user-friendly graphical interface. It
+            demonstrates essential database operations and is designed for beginner-friendly database interaction.</p>
         <ul class="p1-ul1">
             <h3>Key Features:</h3>
             <li>Create: Add new records to the database.</li>
@@ -151,67 +171,69 @@
             <li>Delete: Remove records permanently.</li>
             <li>User-Friendly UI: Built with Swing for an interactive experience.</li>
             <li>MySQL Integration: Efficient data storage and retrieval using JDBC.</li>
-        </ul >
+        </ul>
         <ul class="p1-ul2">
             <h3>Tech Stack:</h3>
             <li>Frontend: Java Swing</li>
             <li>Backend: Java (JDBC)</li>
             <li>Database: MySQL</li>
         </ul>
-        <p class="p1-end">This project serves as a foundation for learning database-driven applications and understanding CRUD operations in Java.</p>
-    
-    <button class="p1-button">Link</button>
+        <p class="p1-end">This project serves as a foundation for learning database-driven applications and
+            understanding CRUD operations in Java.</p>
+
+        <button class="p1-button">Link</button>
     </div>
-    
+
     <div class="proj1">
-        <h2 class="p1-head" >GUI-Based CRUD Application</h2>
-        <p class="p1-desc">A GUI-Based CRUD (Create, Read, Update, Delete) application built using Java and MySQL. This application allows users to manage data efficiently through a user-friendly graphical interface. It demonstrates essential database operations and is designed for beginner-friendly database interaction.</p>
+        <h2 class="p1-head">Registration and Login System using JSP and MySQL</h2>
+        <p class="p1-desc">A Registration and Login System built using JSP (Java Server Pages) and MySQL. This application allows users to create an account, log in securely, and manage sessions efficiently. It demonstrates essential authentication concepts and is designed for beginner-friendly web development.</p>
         <ul class="p1-ul1">
             <h3>Key Features:</h3>
-            <li>Create: Add new records to the database.</li>
-            <li> Read: Display stored data in a structured format.</li>
-            <li> Update: Modify existing records.</li>
-            <li>Delete: Remove records permanently.</li>
-            <li>User-Friendly UI: Built with Swing for an interactive experience.</li>
-            <li>MySQL Integration: Efficient data storage and retrieval using JDBC.</li>
-        </ul >
+            <li>User Registration: Users can create an account by providing a username, email, and password.</li>
+            <li>User Login: Authenticates users using stored credentials in the database.</li>
+            <li>Session Management: Ensures only logged-in users can access protected pages.</li>
+            <li>Logout Functionality: Users can log out, terminating the session</li>
+            <li>Database Integration: Uses MySQL for storing and managing user data.</li>
+            
+        </ul>
         <ul class="p1-ul2">
             <h3>Tech Stack:</h3>
-            <li>Frontend: Java Swing</li>
-            <li>Backend: Java (JDBC)</li>
+            <li>Frontend: JSP, HTML, CSS</li>
+            <li>Backend: Java (JSP, JDBC)</li>
             <li>Database: MySQL</li>
+            <li>Server: Apache Tomcat</li>
         </ul>
-        <p class="p1-end">This project serves as a foundation for learning database-driven applications and understanding CRUD operations in Java.</p>
-    
-    <button class="p1-button">Link</button>
+        <p class="p1-end">This project serves as a foundation for learning user authentication, session handling, and database-driven web applications in Java. </p>
+
+        <button class="p1-button">Link</button>
     </div>
 </div>
 <div class="hireme" id="hireme">
     <div class="register">
         <h2 align="center">Contact</h2>
-        <form action="" class="contactform">
+        <form action="https://formsubmit.co/0c8711c8f8cd43f1b07bae9786f558a9" method="POST" class="contactform">
             <label for="">Your Name</label>
-            <input type="text" required>
+            <input type="text" name="uname" id="name" required>
             <label for="">Your Email</label>
-            <input type="email" required>
+            <input type="email" name="email" id="email" required>
             <label for="">subject</label>
-            <input type="text" required>
+            <input type="text" name="subject" id="subject" required>
             <label for="">Comment</label>
-            <textarea name="comments" id="" cols="20" rows="5"></textarea>
-            <input type="button" value="submit" class="btn">
+            <textarea name="comments" id="comments" cols="20" rows="5" ></textarea>
+            <input type="button" value="submit" class="btn" onclick="validateForm(),clearForm()">
         </form>
     </div>
 </div>
 <div class="footer">
     <div class="footer-txt">
         <div class="foottxt">
-            <h3 >MUGILAN A</h3>
+            <h3>MUGILAN A</h3>
             <P>Mobile: +91 89732 65244</P>
             <p>Namakkal,TamilNadu - 637202</p>
         </div>
         <div class="icons">
-            <a href="www.google.com" target="_top"><img src="img/linkedin.png" alt="linkedin"></a>
-            <a href=""><img src="img/githubfoot.png" alt="github"></a>
+            <a href="" target="_top"><img src="img/linkedin.png" alt="linkedin"></a>
+            <a href="https://github.com/Mugilan2003"><img src="img/githubfoot.png" alt="github"></a>
             <a href="www.almugilan180@gmail.com"><img src="img/email.png" alt="email"></a>
         </div>
     </div>
@@ -219,4 +241,5 @@
         <p>&copy; 2025 Mugilan2003/Portfolio. All rights reserved.</p>
     </div>
 </div>
+
 </html>
