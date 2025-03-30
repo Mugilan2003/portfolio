@@ -218,7 +218,8 @@ body {
         justify-content: space-between;
     }
     .text-change{
-        font-size: 20px;
+        font-size: 16px;
+        margin-left:-2px;
     }
     .ani-role{
         font-size: 25px;
