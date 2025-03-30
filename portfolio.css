@@ -240,18 +240,18 @@ body {
     .hero-backdrop {
         /* height:400px; */
         /* width: 400px; */
-        height: 350px;
-        width: 350px;
+        height: 250px;
+        width: 250px;
         /* left: 10%; */
         right: 4%;
         top: 50%;
     }
 
     .myimage {
-        height: 500px;
-        width: 350px;
+        height: 400px;
+        width: 250px;
         left: 10%;
-        bottom: 44px;
+        bottom: 20px;
     }
 
     .nametext {
@@ -351,7 +351,7 @@ body {
     }
    
     .edu {
-        width: 70vw;
+        width: 75vw;
         padding: 5px;
     }
 }
