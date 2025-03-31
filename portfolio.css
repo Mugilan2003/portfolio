@@ -217,10 +217,14 @@ body {
         display: block;
         justify-content: space-between;
     }
+    .herotxt{
+        margin-left:0px;
+    }
     .text-change{
-        font-size: 12px;
         margin-left:-2px;
-       
+    }
+    .text-change span{
+        font-size: 12px;
     }
     .ani-role{
         font-size: 25px;
