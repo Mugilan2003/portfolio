@@ -223,8 +223,11 @@ body {
     .text-change{
         margin-left:-2px;
     }
-    .text-change span{
+    .text change .role-txt{
         font-size: 18px;
+    }
+    .text-change span{
+        font-size: 20px;
     }
     .ani-role{
         font-size: 25px;
