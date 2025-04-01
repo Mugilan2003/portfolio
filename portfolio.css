@@ -311,34 +311,38 @@ body {
 }
 
 .education {
+    display: flex;
+    flex-direction: column;
     background-image: url(img/educationbg.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    height: auto;
     padding: 50px;
     filter: blur(0px);
 }
 
 .education h1 {
     font-family: "Roboto", sans-serif;
-    margin-top: 20px;
+    margin-top: 10px;
     text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.603);
 }
 
 .edu-div {
     display: flex;
-    margin-top: 100px;
+    flex-direction: column;
+    margin-top: 50px;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 .edu {
+    display: flex;
+    flex-direction: column;
     background-color: white;
-    padding: 10px 10px 10px 5px;
+    padding: 15px;
     border-radius: 7px;
-    margin: 15px 0px 0px 10px;
+    margin: 10px;
     width: 60vw;
     box-shadow: 1px 3px 5px 1px rgba(0, 0, 0, 0.3);
 }
@@ -353,6 +357,12 @@ body {
     .about-txt img{
         height: 400px;
         width: 340px;
+    }
+    .education {
+        padding: 25px;
+    }
+    .edu{
+        width: 80vw;
     }
     .about-txt p{
         margin-top: 30px;
