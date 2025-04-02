@@ -573,7 +573,9 @@ body {
 /* .p1-head{
     width: 500px;
 } */
-
+.proj1 a{
+    width:fit-content;
+}
 .p1-button {
     cursor: pointer;
     padding: 10px;
