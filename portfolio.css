@@ -584,6 +584,11 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.596);
     background: linear-gradient(rgba(233, 132, 17, 0.712), rgba(121, 35, 161, 0.555));
 }
+.p1-button a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
 .p1-button:hover{
     color: white;
     font-size: large;
